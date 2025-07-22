@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>new morphism</title>
+  <style>
+    body {
+      min-height: 100vh;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    /* overflow must not be visible */
+    /* none inline elements */
+    .box {
+      width: 150px;
+      height: 150px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .box-2 {
+      width: 150px;
+      height: 150px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .box:hover {
+      box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+    }
+
+    .box-2:hover {
+      box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset, -10px -10px 10px white inset;
+    }
+  </style>
+</head>
+
+<body>
+  <h5>outside shadow</h5>
+  <div class="container">
+    <div class="box">horizontal</div>
+    <div class="box">vertical</div>
+    <div class="box">both</div>
+  </div>
+
+  <hr>
+  <h5>inside shadow</h5>
+  <div class="container">
+    <div class="box-2">horizontal</div>
+    <div class="box-2">vertical</div>
+    <div class="box-2">both</div>
+  </div>
+</body>
+
+</html>

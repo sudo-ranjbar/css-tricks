@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css swiper</title>
+  <style>
+    body {
+      min-height: 100vh;
+      background-color: #d4d4d4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      width: 300px;
+      gap: 20px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+
+    /* overflow must not be visible */
+    /* none inline elements */
+    .box {
+      scroll-snap-align: center;
+      box-sizing: border-box;
+      width: 300px;
+      padding: 20px 30px;
+      flex-shrink: 0;
+      background-color: white;
+      color: #1e1e1e;
+      text-align: center;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h5>css only swiper</h5>
+    <div class="container">
+      <div class="box">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt minima magni repudiandae.</p>
+      </div>
+      <div class="box">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt minima magni repudiandae.</p>
+      </div>
+      <div class="box">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt minima magni repudiandae.</p>
+      </div>
+      <div class="box">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt minima magni repudiandae.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
