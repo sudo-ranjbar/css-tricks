@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resize</title>
+  <style>
+    body {
+      background-color: gray;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    /* overflow must not be visible */
+    /* none inline elements */
+    .box {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      padding: 10px;
+      background-color: rgb(120, 179, 230);
+      border-radius: 10px;
+      border: 1px solid white;
+    }
+
+    .vertical {
+      resize: vertical;
+    }
+
+    .horizontal {
+      resize: horizontal;
+    }
+
+    .both {
+      resize: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box horizontal">horizontal</div>
+    <div class="box vertical">vertical</div>
+    <div class="box both">both</div>
+  </div>
+</body>
+
+</html>
